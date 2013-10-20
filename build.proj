@@ -72,6 +72,18 @@
     
     <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.psm1"
           DestinationFolder="$(BuildDir32)\bin" />
+  
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\EasyHttp.dll"
+          DestinationFolder="$(BuildDir32)\bin" />
+ 
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\JsonFx.dll"
+          DestinationFolder="$(BuildDir32)\bin" />
+  
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Newtonsoft.Json.dll"
+          DestinationFolder="$(BuildDir32)\bin" />
+  
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\TeamCitySharp.dll"
+          DestinationFolder="$(BuildDir32)\bin" />
   </Target>
   
   <Target Name="Copy64" DependsOnTargets="Compile">
@@ -89,6 +101,18 @@
           DestinationFolder="$(BuildDir64)\bin" />
 
     <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.psm1"
+          DestinationFolder="$(BuildDir64)\bin" />
+    
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\EasyHttp.dll"
+          DestinationFolder="$(BuildDir64)\bin" />
+ 
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\JsonFx.dll"
+          DestinationFolder="$(BuildDir64)\bin" />
+  
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Newtonsoft.Json.dll"
+          DestinationFolder="$(BuildDir64)\bin" />
+  
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\TeamCitySharp.dll"
           DestinationFolder="$(BuildDir64)\bin" />
   </Target>
 

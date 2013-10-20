@@ -42,11 +42,25 @@ namespace Illallangi.TeamCityPS.Config
             set { this["AuthCache"] = value; }
         }
 
-        [ConfigurationProperty("WaitPrompt", DefaultValue = "Press any key to continue...")]
+        [ConfigurationProperty("WaitPrompt", DefaultValue = "Backup status {1}; waiting {0}ms.")]
         public string WaitPrompt
         {
             get { return (string)this["WaitPrompt"]; }
             set { this["WaitPrompt"] = value; }
+        }
+
+        [ConfigurationProperty("Timeout", DefaultValue = "1000")]
+        public int Timeout
+        {
+            get { return (int)this["Timeout"]; }
+            set { this["Timeout"] = value.ToString(); }
+        }
+
+        [ConfigurationProperty("IdleStatus", DefaultValue = "Idle")]
+        public string IdleStatus
+        {
+            get { return (string)this["IdleStatus"]; }
+            set { this["IdleStatus"] = value; }
         }
     }
 }

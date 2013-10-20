@@ -69,6 +69,18 @@
         <File Id="IllallangiTeamCityPSDllFPSD1" Source="$(var.source)\Illallangi.TeamCityPS.psd1" />
         <File Id="IllallangiTeamCityPSDllFPSM1" Source="$(var.source)\Illallangi.TeamCityPS.psm1" />
       </Component>
+      <Component Id="NewtonsoftJsonDllC" Directory="SOFTWAREDIR" Guid="{BB595671-B9C2-4245-A9F4-5474EBB24294}" Permanent="yes" >
+        <File Id="NewtonsoftJsonDllF" KeyPath="yes" Source="$(var.source)\Newtonsoft.Json.dll" />
+      </Component>
+      <Component Id="EasyHttpDllC" Directory="SOFTWAREDIR" Guid="{EB0F700F-1C53-47AE-AB41-8B3FE9F3673E}" Permanent="yes" >
+        <File Id="EasyHttpDllF" KeyPath="yes" Source="$(var.source)\EasyHttp.dll" />
+      </Component>
+      <Component Id="JsonFxDllC" Directory="SOFTWAREDIR" Guid="{FE6D8012-7E0E-4EDC-BF09-2A6F78DD08D0}" Permanent="yes" >
+        <File Id="JsonFxDllF" KeyPath="yes" Source="$(var.source)\JsonFx.dll" />
+      </Component>
+      <Component Id="TeamCitySharpDllC" Directory="SOFTWAREDIR" Guid="{F688184E-A2C9-43B6-8092-1000131E8983}" Permanent="yes" >
+        <File Id="TeamCitySharpDllF" KeyPath="yes" Source="$(var.source)\TeamCitySharp.dll" />
+      </Component>
       <ComponentRef Id="Empty" />
     </Feature>
 

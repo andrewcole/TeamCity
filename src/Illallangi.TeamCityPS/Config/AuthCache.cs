@@ -42,7 +42,7 @@ namespace Illallangi.TeamCityPS.Config
             var fileName = Environment.ExpandEnvironmentVariables(TeamCityConfig.Config.AuthCache);
 
             return File.Exists(fileName) ?
-                JsonConvert.DeserializeObject<AuthCache>(File.ReadAllText(fileName)) :
+                JsonConvert.DeserializeObject<AuthCache>(File.ReadAllText(fileName)) ?? new AuthCache().ToFile() :
                 new AuthCache().ToFile();
         }
     }
