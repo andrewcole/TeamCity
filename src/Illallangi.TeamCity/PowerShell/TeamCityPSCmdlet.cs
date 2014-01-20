@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Management.Automation;
-using Illallangi.TeamCityPS.Config;
+using Illallangi.TeamCity.Config;
 using TeamCitySharp;
 
-namespace Illallangi.TeamCityPS.PowerShell
+namespace Illallangi.TeamCity.PowerShell
 {
     [Cmdlet("Get", "TeamCityAbstractClass")]
-    public abstract class TeamCityPSCmdlet : PSCmdlet
+    public abstract class TeamCityCmdlet : PSCmdlet
     {
         [Alias("Server")]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true)]

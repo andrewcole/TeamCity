@@ -36,7 +36,7 @@
     </GitVersion>
 
     <AssemblyInfo CodeLanguage="CS"
-                  OutputFile="$(SourceDir)\Illallangi.TeamCityPS\Properties\AssemblyInfo.cs"
+                  OutputFile="$(SourceDir)\Illallangi.TeamCity\Properties\AssemblyInfo.cs"
                   AssemblyTitle="TeamCity PowerShell Module"
                   AssemblyDescription=""
                   AssemblyCompany="Illallangi Enterprises"
@@ -53,7 +53,7 @@
   <Target Name="Compile" DependsOnTargets="Version">
     <Message Text="=========== Compile ===========" Importance="High" />
 
-    <MSBuild Projects="$(SourceDir)\Illallangi.TeamCityPS.sln" Properties="Configuration=$(Configuration)" Targets="Rebuild" />
+    <MSBuild Projects="$(SourceDir)\Illallangi.TeamCity.sln" Properties="Configuration=$(Configuration)" Targets="Rebuild" />
   </Target>
 
   <Target Name="Copy32" DependsOnTargets="Compile">
@@ -61,28 +61,28 @@
 
     <MakeDir Directories="$(BuildDir32)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.dll"
           DestinationFolder="$(BuildDir32)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.dll.config"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.dll.config"
           DestinationFolder="$(BuildDir32)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.psd1"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.psd1"
           DestinationFolder="$(BuildDir32)\bin" />
     
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.psm1"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.psm1"
           DestinationFolder="$(BuildDir32)\bin" />
   
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\EasyHttp.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\EasyHttp.dll"
           DestinationFolder="$(BuildDir32)\bin" />
  
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\JsonFx.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\JsonFx.dll"
           DestinationFolder="$(BuildDir32)\bin" />
   
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Newtonsoft.Json.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Newtonsoft.Json.dll"
           DestinationFolder="$(BuildDir32)\bin" />
   
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\TeamCitySharp.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\TeamCitySharp.dll"
           DestinationFolder="$(BuildDir32)\bin" />
   </Target>
   
@@ -91,28 +91,28 @@
 
     <MakeDir Directories="$(BuildDir64)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.dll"
           DestinationFolder="$(BuildDir64)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.dll.config"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.dll.config"
           DestinationFolder="$(BuildDir64)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.psd1"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.psd1"
           DestinationFolder="$(BuildDir64)\bin" />
 
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Illallangi.TeamCityPS.psm1"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Illallangi.TeamCity.psm1"
           DestinationFolder="$(BuildDir64)\bin" />
     
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\EasyHttp.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\EasyHttp.dll"
           DestinationFolder="$(BuildDir64)\bin" />
  
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\JsonFx.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\JsonFx.dll"
           DestinationFolder="$(BuildDir64)\bin" />
   
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\Newtonsoft.Json.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\Newtonsoft.Json.dll"
           DestinationFolder="$(BuildDir64)\bin" />
   
-    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCityPS\bin\$(Configuration)\TeamCitySharp.dll"
+    <Copy SourceFiles="$(SourceDir)\Illallangi.TeamCity\bin\$(Configuration)\TeamCitySharp.dll"
           DestinationFolder="$(BuildDir64)\bin" />
   </Target>
 

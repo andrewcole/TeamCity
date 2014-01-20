@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Illallangi.TeamCityPS.Config
+namespace Illallangi.TeamCity.Config
 {
     public sealed class AuthCache : List<Auth>
     {

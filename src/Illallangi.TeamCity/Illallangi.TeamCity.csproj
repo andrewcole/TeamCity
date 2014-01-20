@@ -7,8 +7,8 @@
     <ProjectGuid>{F67E93DB-B8E9-43F6-A24F-7FCCD304181B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Illallangi.TeamCityPS</RootNamespace>
-    <AssemblyName>Illallangi.TeamCityPS</AssemblyName>
+    <RootNamespace>Illallangi.TeamCity</RootNamespace>
+    <AssemblyName>Illallangi.TeamCity</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -59,7 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Config\TeamCityConfig.cs" />
     <Compile Include="Config\Auth.cs" />
     <Compile Include="Config\AuthCache.cs" />
@@ -72,10 +71,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Illallangi.TeamCityPS.psd1">
+    <None Include="Illallangi.TeamCity.psd1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Illallangi.TeamCityPS.psm1">
+    <None Include="Illallangi.TeamCity.psm1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

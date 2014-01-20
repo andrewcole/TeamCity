@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Management.Automation;
 using TeamCitySharp;
-using Illallangi.TeamCityPS.Config;
 
-namespace Illallangi.TeamCityPS.PowerShell
+namespace Illallangi.TeamCity.PowerShell
 {
     [Cmdlet(VerbsCommon.Get, "TeamCityServerInfo")]
-    public sealed class GetTeamCityServerInfo : TeamCityPSCmdlet
+    public sealed class GetTeamCityServerInfo : TeamCityCmdlet
     {
         protected override IEnumerable<object> Process(ITeamCityClient client)
         {

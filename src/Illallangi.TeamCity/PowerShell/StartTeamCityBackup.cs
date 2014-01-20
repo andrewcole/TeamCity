@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Management.Automation;
 using TeamCitySharp;
-using Illallangi.TeamCityPS.Config;
+using Illallangi.TeamCity.Config;
 using TeamCitySharp.ActionTypes;
 
-namespace Illallangi.TeamCityPS.PowerShell
+namespace Illallangi.TeamCity.PowerShell
 {
     [Cmdlet(VerbsLifecycle.Start, "TeamCityBackup")]
-    public sealed class StartTeamCityBackup : TeamCityPSCmdlet
+    public sealed class StartTeamCityBackup : TeamCityCmdlet
     {
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true)]
         public string FileName { get; set; }

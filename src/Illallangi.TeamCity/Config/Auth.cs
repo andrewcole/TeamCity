@@ -1,4 +1,4 @@
-﻿namespace Illallangi.TeamCityPS.Config
+﻿namespace Illallangi.TeamCity.Config
 {
     public sealed class Auth
     {

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Diagnostics;
-using System.Linq;
-using System.Management.Automation;
-using Illallangi.TeamCityPS.Config;
+﻿using System.Management.Automation;
+using Illallangi.TeamCity.Config;
 
-namespace Illallangi.TeamCityPS.PowerShell
+namespace Illallangi.TeamCity.PowerShell
 {
     [Cmdlet(VerbsCommon.Set, "TeamCityAuthentication")]
     public sealed class SetTeamCityAuthentication : PSCmdlet

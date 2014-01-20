@@ -48,7 +48,7 @@
         <Directory Id="WindowsPowerShell" Name="WindowsPowerShell">
           <Directory Id="v1.0" Name="v1.0">
             <Directory Id="Modules" Name="Modules">
-              <Directory Id="SOFTWAREDIR" Name="Illallangi.TeamCityPS" />
+              <Directory Id="SOFTWAREDIR" Name="Illallangi.TeamCity" />
             </Directory>
           </Directory>
         </Directory>
@@ -63,11 +63,11 @@
     <Property Id="ARPNOMODIFY" Value="1" />
 
     <Feature Id="Complete" Level="1" Title="$(var.AppName)">
-      <Component Id="IllallangiTeamCityPSDllC" Directory="SOFTWAREDIR" Guid="{A4E7838D-47B2-4790-9C7E-A0A2AC36ADB1}" Permanent="yes" >
-        <File Id="IllallangiTeamCityPSDllF" KeyPath="yes" Source="$(var.source)\Illallangi.TeamCityPS.dll" />
-        <File Id="IllallangiTeamCityPSDllFConfig" Source="$(var.source)\Illallangi.TeamCityPS.dll.Config" />
-        <File Id="IllallangiTeamCityPSDllFPSD1" Source="$(var.source)\Illallangi.TeamCityPS.psd1" />
-        <File Id="IllallangiTeamCityPSDllFPSM1" Source="$(var.source)\Illallangi.TeamCityPS.psm1" />
+      <Component Id="IllallangiTeamCityDllC" Directory="SOFTWAREDIR" Guid="{A4E7838D-47B2-4790-9C7E-A0A2AC36ADB1}" Permanent="yes" >
+        <File Id="IllallangiTeamCityDllF" KeyPath="yes" Source="$(var.source)\Illallangi.TeamCity.dll" />
+        <File Id="IllallangiTeamCityDllFConfig" Source="$(var.source)\Illallangi.TeamCity.dll.Config" />
+        <File Id="IllallangiTeamCityDllFPSD1" Source="$(var.source)\Illallangi.TeamCity.psd1" />
+        <File Id="IllallangiTeamCityDllFPSM1" Source="$(var.source)\Illallangi.TeamCity.psm1" />
       </Component>
       <Component Id="NewtonsoftJsonDllC" Directory="SOFTWAREDIR" Guid="{BB595671-B9C2-4245-A9F4-5474EBB24294}" Permanent="yes" >
         <File Id="NewtonsoftJsonDllF" KeyPath="yes" Source="$(var.source)\Newtonsoft.Json.dll" />

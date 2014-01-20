@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace Illallangi.TeamCityPS.Config
+namespace Illallangi.TeamCity.Config
 {
     public sealed class TeamCityConfig : ConfigurationSection
     {
@@ -35,7 +35,7 @@ namespace Illallangi.TeamCityPS.Config
             }
         }
 
-        [ConfigurationProperty("AuthCache", DefaultValue = "%localappdata%\\Illallangi Enterprises\\TeamCityPS\\AuthTokens.json")]
+        [ConfigurationProperty("AuthCache", DefaultValue = "%localappdata%\\Illallangi Enterprises\\TeamCity\\AuthTokens.json")]
         public string AuthCache
         {
             get { return (string)this["AuthCache"]; }
